@@ -17,76 +17,89 @@
 <!-- Service Start -->
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-            <h1 class="display-6 mb-5">We Provide professional Heating & Cooling Services</h1>
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="display-6 mb-3 text-navy">We Provide Professional Heating & Cooling Services</h1>
+            <p class="text-muted mb-5">Explore our comprehensive list of 24 specialized services. Use the filter tabs or search bar to instantly find what you need and book directly via WhatsApp.</p>
         </div>
+
+        <!-- Filter & Search Controls -->
+        <div class="row g-4 mb-5 justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.2s">
+            <!-- Search Bar -->
+            <div class="col-lg-12 col-md-12">
+                <div class="search-box position-relative">
+                    <i class="fa fa-search text-primary position-absolute top-50 translate-middle-y ms-3"></i>
+                    <input type="text" 
+                           class="form-control rounded-pill py-3 ps-5 border-2" 
+                           placeholder="Search services (e.g. vent, repair)..." 
+                           [value]="searchTerm()"
+                           (input)="onSearch($event)">
+                </div>
+            </div>
+            
+            <!-- Category Pills -->
+            <!-- <div class="col-lg-8">
+                <div class="d-flex flex-wrap justify-content-center gap-2">
+                    <button class="btn filter-pill px-4 py-2" 
+                            [class.active]="activeCategory() === 'all'" 
+                            (click)="setCategory('all')">All Services</button>
+                    <button class="btn filter-pill px-4 py-2" 
+                            [class.active]="activeCategory() === 'ac'" 
+                            (click)="setCategory('ac')">Air Conditioning</button>
+                    <button class="btn filter-pill px-4 py-2" 
+                            [class.active]="activeCategory() === 'heating'" 
+                            (click)="setCategory('heating')">Heating</button>
+                    <button class="btn filter-pill px-4 py-2" 
+                            [class.active]="activeCategory() === 'duct'" 
+                            (click)="setCategory('duct')">Ducts & Ventilation</button>
+                    <button class="btn filter-pill px-4 py-2" 
+                            [class.active]="activeCategory() === 'hvac'" 
+                            (click)="setCategory('hvac')">HVAC & Controls</button>
+                    <button class="btn filter-pill px-4 py-2" 
+                            [class.active]="activeCategory() === 'general'" 
+                            (click)="setCategory('general')">General</button>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Services Grid -->
         <div class="row g-4 justify-content-center">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item">
-                    <img class="img-fluid" src="/img/service-1.jpg" alt="">
-                    <div class="d-flex align-items-center bg-light">
-                        <div class="service-icon flex-shrink-0 bg-primary">
-                            <img class="img-fluid" src="/img/icon/icon-01-light.png" alt="">
+            @for (service of filteredServices(); track service.id; let i = $index) {
+                <div class="col-lg-4 col-md-6 wow fadeInUp" [attr.data-wow-delay]="'0.' + ((i % 3) * 2 + 1) + 's'">
+                    <div class="service-item h-100 d-flex flex-column bg-white shadow-sm rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden" style="height: 230px;">
+                            <img class="img-fluid w-100 h-100" [src]="service.image" [alt]="service.title" style="object-fit: cover;">
                         </div>
-                        <a class="h4 mx-4 mb-0" routerLink="/service">AC Installation</a>
+                        <div class="d-flex align-items-center bg-light border-bottom">
+                            <div class="service-icon flex-shrink-0 bg-primary d-flex align-items-center justify-content-center text-white" style="width: 90px; height: 90px;">
+                                <i [class]="service.icon + ' fa-2x'"></i>
+                            </div>
+                            <h4 class="h5 mx-4 mb-0 text-navy fw-bold" style="font-family: 'Poppins', sans-serif;">{{ service.title }}</h4>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <p class="text-secondary flex-grow-1 mb-4" style="font-family: 'Inter', sans-serif; font-size: 0.92rem; line-height: 1.6;">
+                                {{ service.description }}
+                            </p>
+                            <button class="btn btn-whatsapp-book mt-auto w-100 py-2.5 rounded-3 d-flex align-items-center justify-content-center gap-2" 
+                                    (click)="bookOnWhatsApp(service.title)">
+                                <i class="fab fa-whatsapp fs-5 text-success"></i>
+                                <span class="fw-bold">Book on WhatsApp</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <img class="img-fluid" src="/img/service-2.jpg" alt="">
-                    <div class="d-flex align-items-center bg-light">
-                        <div class="service-icon flex-shrink-0 bg-primary">
-                            <img class="img-fluid" src="/img/icon/icon-02-light.png" alt="">
-                        </div>
-                        <a class="h4 mx-4 mb-0" routerLink="/service">Cooling Services</a>
+            } @empty {
+                <!-- Zero State -->
+                <div class="col-12 text-center py-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="mb-4">
+                        <i class="fas fa-search-minus fa-4x text-muted"></i>
                     </div>
+                    <h3 class="text-navy mb-3">No Services Found</h3>
+                    <p class="text-secondary mb-4 mx-auto" style="max-width: 400px;">We couldn't find any services matching your search query or filter. Try typing something else or reset the filters.</p>
+                    <button class="btn btn-primary px-5 py-3 rounded-pill" (click)="resetFilters()">
+                        <i class="fas fa-sync-alt me-2"></i>Reset All Filters
+                    </button>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item">
-                    <img class="img-fluid" src="/img/service-3.jpg" alt="">
-                    <div class="d-flex align-items-center bg-light">
-                        <div class="service-icon flex-shrink-0 bg-primary">
-                            <img class="img-fluid" src="/img/icon/icon-03-light.png" alt="">
-                        </div>
-                        <a class="h4 mx-4 mb-0" routerLink="/service">Heating Services</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item">
-                    <img class="img-fluid" src="/img/service-4.jpg" alt="">
-                    <div class="d-flex align-items-center bg-light">
-                        <div class="service-icon flex-shrink-0 bg-primary">
-                            <img class="img-fluid" src="/img/icon/icon-04-light.png" alt="">
-                        </div>
-                        <a class="h4 mx-4 mb-0" routerLink="/service">Maintenance & Repair</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <img class="img-fluid" src="/img/service-5.jpg" alt="">
-                    <div class="d-flex align-items-center bg-light">
-                        <div class="service-icon flex-shrink-0 bg-primary">
-                            <img class="img-fluid" src="/img/icon/icon-05-light.png" alt="">
-                        </div>
-                        <a class="h4 mx-4 mb-0" routerLink="/service">Indoor Air Quality</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item">
-                    <img class="img-fluid" src="/img/service-6.jpg" alt="">
-                    <div class="d-flex align-items-center bg-light">
-                        <div class="service-icon flex-shrink-0 bg-primary">
-                            <img class="img-fluid" src="/img/icon/icon-06-light.png" alt="">
-                        </div>
-                        <a class="h4 mx-4 mb-0" routerLink="/service">Annual Inspections</a>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </div>
