@@ -63,21 +63,28 @@
 
         <!-- Services Grid -->
         <div class="row g-4 justify-content-center">
-            @for (service of filteredServices(); track service.id) {
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="premium-service-card h-100 p-4 border rounded-4 d-flex flex-column transition-all">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="service-icon-box d-flex align-items-center justify-content-center rounded-3 bg-light-orange text-orange me-3">
+            @for (service of filteredServices(); track service.id; let i = $index) {
+                <div class="col-lg-4 col-md-6 wow fadeInUp" [attr.data-wow-delay]="'0.' + ((i % 3) * 2 + 1) + 's'">
+                    <div class="service-item h-100 d-flex flex-column bg-white shadow-sm rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden" style="height: 230px;">
+                            <img class="img-fluid w-100 h-100" [src]="service.image" [alt]="service.title" style="object-fit: cover;">
+                        </div>
+                        <div class="d-flex align-items-center bg-light border-bottom">
+                            <div class="service-icon flex-shrink-0 bg-primary d-flex align-items-center justify-content-center text-white" style="width: 90px; height: 90px;">
                                 <i [class]="service.icon + ' fa-2x'"></i>
                             </div>
-                            <h4 class="mb-0 text-navy card-service-title">{{ service.title }}</h4>
+                            <h4 class="h5 mx-4 mb-0 text-navy fw-bold" style="font-family: 'Poppins', sans-serif;">{{ service.title }}</h4>
                         </div>
-                        <p class="text-secondary flex-grow-1 card-service-desc">{{ service.description }}</p>
-                        <button class="btn btn-whatsapp-book mt-3 w-100 py-2.5 rounded-3 d-flex align-items-center justify-content-center gap-2" 
-                                (click)="bookOnWhatsApp(service.title)">
-                            <i class="fab fa-whatsapp fs-5"></i>
-                            <span>Book on WhatsApp</span>
-                        </button>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <p class="text-secondary flex-grow-1 mb-4" style="font-family: 'Inter', sans-serif; font-size: 0.92rem; line-height: 1.6;">
+                                {{ service.description }}
+                            </p>
+                            <button class="btn btn-whatsapp-book mt-auto w-100 py-2.5 rounded-3 d-flex align-items-center justify-content-center gap-2" 
+                                    (click)="bookOnWhatsApp(service.title)">
+                                <i class="fab fa-whatsapp fs-5 text-success"></i>
+                                <span class="fw-bold">Book on WhatsApp</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             } @empty {

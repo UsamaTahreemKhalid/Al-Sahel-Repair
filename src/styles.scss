@@ -16,3 +16,161 @@
 }
 
 @import "../public/css/style.css";
+
+// ==========================================
+// Premium Services Directory Styles (Global Overrides)
+// ==========================================
+.text-navy {
+  color: $dark-navy !important;
+}
+
+// Search Box
+.search-box {
+  i {
+    font-size: 1.1rem;
+    color: $primary;
+  }
+
+  input {
+    border-color: $form-border;
+    color: $dark-navy;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &::placeholder {
+      color: $form-placeholder;
+    }
+
+    &:focus {
+      border-color: $primary;
+      box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.15);
+      outline: none;
+    }
+  }
+}
+
+// Category Filter Pills
+.filter-pill {
+  background-color: #ffffff;
+  border: 2px solid $card-border !important;
+  color: $dark-navy !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: 30px !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+
+  &:hover {
+    border-color: $primary !important;
+    color: $primary !important;
+    transform: translateY(-2px);
+  }
+
+  &.active {
+    background-color: $dark-navy !important;
+    border-color: $dark-navy !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(8, 47, 73, 0.2);
+    transform: translateY(0);
+  }
+}
+
+// Enhanced Service Item Cards (Main Branch Design Enhanced)
+.service-item {
+  background-color: #ffffff;
+  border: 1px solid $card-border !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+
+  // Description Paragraph Text (Enhanced contrast slate color, forced global priority)
+  p {
+    color: #334155 !important; // Deep modern slate for extreme premium contrast and premium readability
+    font-family: 'Inter', sans-serif !important;
+    font-size: 0.92rem !important;
+    line-height: 1.65 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  // Image Zoom Transition
+  img {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  // Icon Box Transition
+  .service-icon {
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-color: $primary !important;
+    
+    i {
+      color: #ffffff !important;
+      transition: transform 0.35s ease;
+    }
+  }
+
+  // Hover States
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(8, 47, 73, 0.1), 0 10px 10px -5px rgba(8, 47, 73, 0.04);
+    border-color: rgba(234, 88, 12, 0.2) !important;
+
+    img {
+      transform: scale(1.08);
+    }
+
+    .service-icon {
+      background-color: $primary-dark !important;
+      transform: scale(1.05) rotate(6deg);
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.2);
+    }
+
+    .btn-whatsapp-book {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(234, 88, 12, 0.3) !important;
+    }
+  }
+}
+
+// WhatsApp booking CTA inside cards (Brand Primary Theme Alignment, forced global priority)
+.btn-whatsapp-book {
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%) !important; // Brand identity orange gradient
+  border: none !important;
+  color: #ffffff !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2px !important;
+  border-radius: 10px !important;
+  padding: 11px 24px !important;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25) !important; // Brand orange shadow
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+
+  i {
+    color: #ffffff !important; // Sleek white icon by default to match text
+    font-size: 1.15rem !important;
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  }
+
+  &:hover {
+    background: linear-gradient(135deg, $primary-dark 0%, #a23107 100%) !important; // Darker brand orange
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.4) !important;
+    transform: translateY(-4px) scale(1.02) !important;
+
+    i {
+      color: #25D366 !important; // Turns vibrant WhatsApp Green on button hover - elegant visual easter-egg!
+      transform: scale(1.25) rotate(-10deg) !important;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px) scale(0.98) !important;
+    box-shadow: 0 3px 8px rgba(234, 88, 12, 0.25) !important;
+  }
+}
+
