@@ -63,4 +63,12 @@ export class Home implements AfterViewInit {
       }
     }
   }
+
+  bookOnWhatsApp(serviceTitle: string) {
+    if (isPlatformBrowser(this.platformId)) {
+      const message = `Hi Al Sahel Repair! I would like to book the service: *${serviceTitle}*. Please let me know your availability and rates.`;
+      const whatsappUrl = `https://wa.me/971562475707?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  }
 }
