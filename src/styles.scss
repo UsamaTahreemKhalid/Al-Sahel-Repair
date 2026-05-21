@@ -1,3 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@use "./scss/color.scss" as *;
 @use "./scss/bootstrap.scss";
+
+:root {
+  --primary: #{$primary};
+  --primary-dark: #{$primary-dark};
+  --secondary: #{$secondary};
+  --dark-navy: #{$dark-navy};
+  --deep-bg: #{$deep-bg};
+  --light-bg: #{$light-bg};
+
+  // Legacy mappings for backwards compatibility with style.css
+  --light: #{$light-bg};
+  --dark: #{$dark-navy};
+}
+
 @import "../public/css/style.css";

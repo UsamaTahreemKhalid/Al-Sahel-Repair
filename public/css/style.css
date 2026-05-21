@@ -1,9 +1,15 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF800F;
-    --secondary: #001064;
-    --light: #F6F7F8;
-    --dark: #010A35;
+    --primary: #EA580C;
+    --primary-dark: #C2410C;
+    --secondary: #0EA5E9;
+    --dark-navy: #082F49;
+    --deep-bg: #041C32;
+    --light-bg: #EFF6FF;
+
+    /* Legacy mapping for Bootstrap and old style compatibility */
+    --light: #EFF6FF;
+    --dark: #082F49;
 }
 
 .back-to-top {
@@ -51,8 +57,8 @@
 }
 
 .btn.btn-primary:hover {
-    background: var(--secondary);
-    border-color: var(--secondary);
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
 }
 
 .btn.btn-secondary:hover {
@@ -164,7 +170,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgba(1, 10, 53, .8);
+    background: rgba(8, 47, 73, 0.72);
     z-index: 1;
 }
 
@@ -197,7 +203,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(1, 10, 53, .8), rgba(1, 10, 53, .8)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(8, 47, 73, 0.72), rgba(8, 47, 73, 0.72)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -214,7 +220,7 @@
 
 /*** Facts ***/
 .facts {
-    background: rgba(1, 10, 53, .8);
+    background: rgba(8, 47, 73, 0.8);
 }
 
 
@@ -254,7 +260,7 @@
 }
 
 .container.quote .quote-text {
-    background: rgba(1, 10, 53, .8);
+    background: rgba(8, 47, 73, 0.8);
 }
 
 .container.quote .quote-form {
@@ -294,7 +300,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(1, 10, 53, .8);
+    background: rgba(8, 47, 73, 0.8);
     transition: .5s;
 }
 

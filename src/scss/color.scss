@@ -1,0 +1,82 @@
+// Brand Identity Colors (From color_scheme.txt)
+$primary: #EA580C;       // Primary Brand / Orange
+$primary-dark: #C2410C;  // Primary Dark / Burnt Orange
+$secondary: #0EA5E9;     // Secondary / Sky Blue
+$dark-navy: #082F49;     // Dark Navy / Main Dark
+$deep-bg: #041C32;       // Deep Background / Footer Dark
+$light-bg: #EFF6FF;      // Light Background / Soft Blue White
+
+// Full Website Color Breakdown / Semantic Mapping
+$navbar-bg: $dark-navy;
+$navbar-text: #FFFFFF;
+$navbar-active: $primary;
+$navbar-hover: $secondary;
+$navbar-mobile-bg: $deep-bg;
+
+// Hero Section & Gradient
+$hero-bg: $dark-navy;
+$hero-overlay: rgba(8, 47, 73, 0.72);
+$hero-heading: #FFFFFF;
+$hero-subheading: #CBD5E1;
+$hero-highlight: $primary;
+
+// Buttons
+$btn-bg: $primary;
+$btn-text: #FFFFFF;
+$btn-hover: $primary-dark;
+$btn-radius: 12px;
+$btn-shadow: rgba(234, 88, 12, 0.25);
+
+// Secondary Button
+$btn-sec-bg: transparent;
+$btn-sec-border: #FFFFFF;
+$btn-sec-text: #FFFFFF;
+$btn-sec-hover-bg: #FFFFFF;
+$btn-sec-hover-text: $dark-navy;
+
+// Cards / Service Boxes
+$card-bg: #FFFFFF;
+$card-border: #E2E8F0;
+$card-hover-border: $primary;
+$card-title: $dark-navy;
+$card-text: #475569;
+$card-icon-bg: #FFF7ED;
+$card-icon: $primary;
+
+// Section Backgrounds
+$bg-about: #FFFFFF;
+$bg-services: #F8FAFC;
+$bg-testimonial: $light-bg;
+$bg-cta: $dark-navy;
+$bg-faq: #FFFFFF;
+
+// Typography Colors
+$text-heading: $dark-navy;
+$text-body: #475569;
+$text-light: #CBD5E1;
+$text-muted: #94A3B8;
+$text-link: $secondary;
+$text-link-hover: $primary;
+
+// Forms
+$form-bg: #FFFFFF;
+$form-border: #CBD5E1;
+$form-focus-border: $primary;
+$form-placeholder: #94A3B8;
+$form-label: $dark-navy;
+$form-error: #DC2626;
+$form-success: #16A34A;
+
+// Status Colors
+$status-success: #16A34A;
+$status-warning: #F59E0B;
+$status-error: #DC2626;
+$status-info: $secondary;
+
+// Footer
+$footer-bg: $deep-bg;
+$footer-heading: #FFFFFF;
+$footer-text: #CBD5E1;
+$footer-links: #94A3B8;
+$footer-hover: $primary;
+$footer-divider: rgba(255, 255, 255, 0.08);

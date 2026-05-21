@@ -1,19 +1,20 @@
 /******* Customized Bootstrap ********/
+@use "color" as *;
 
 @use "bootstrap/scss/bootstrap" with (
-  $primary: #FF800F,
-  $secondary: #001064,
-  $light: #F6F7F8,
-  $dark: #010A35,
-  $font-family-base: ('Roboto', sans-serif),
-  $headings-font-family: ('Roboto Slab', serif),
-  $body-color: #7F8499,
-  $headings-color: #010A35,
+  $primary: $primary,
+  $secondary: $secondary,
+  $light: $light-bg,
+  $dark: $dark-navy,
+  $font-family-base: ('Inter', sans-serif),
+  $headings-font-family: ('Poppins', sans-serif),
+  $body-color: $text-body,
+  $headings-color: $text-heading,
   $headings-font-weight: 600,
   $display-font-weight: 800,
-  $border-radius: 0px,
-  $border-radius-sm: 0px,
-  $border-radius-lg: 0px,
+  $border-radius: $btn-radius,
+  $border-radius-sm: 8px,
+  $border-radius-lg: 16px,
   $link-decoration: none,
   $enable-negative-margins: true
 );

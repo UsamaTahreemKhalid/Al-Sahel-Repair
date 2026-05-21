@@ -1,0 +1,174 @@
+Brand Identity
+
+| Purpose          | Color           | Hex       |
+| ---------------- | --------------- | --------- |
+| Primary Brand    | Orange          | `#EA580C` |
+| Primary Dark     | Burnt Orange    | `#C2410C` |
+| Secondary        | Sky Blue        | `#0EA5E9` |
+| Dark Navy        | Main Dark       | `#082F49` |
+| Deep Background  | Footer Dark     | `#041C32` |
+| Light Background | Soft Blue White | `#EFF6FF` |
+
+
+
+Full Website Color Breakdown
+
+| Element           | Color                    |
+| ----------------- | ------------------------ |
+| Navbar Background | `#082F49`                |
+| Navbar Text       | `#FFFFFF`                |
+| Active Menu Item  | `#EA580C`                |
+| Hover Menu Item   | `#0EA5E9`                |
+| Mobile Menu BG    | `#041C32`                |
+| Border Bottom     | `rgba(255,255,255,0.08)` |
+
+
+
+Hero Section
+
+| Element          | Color                      |
+| ---------------- | -------------------------- |
+| Hero Background  | `#082F49`                  |
+| Hero Overlay     | `rgba(8,47,73,0.72)`       |
+| Heading Text     | `#FFFFFF`                  |
+| Subheading Text  | `#CBD5E1`                  |
+| Highlight Text   | `#EA580C`                  |
+| CTA Button       | `#EA580C`                  |
+| CTA Hover        | `#C2410C`                  |
+| Secondary Button | Transparent + White Border |
+
+Hero Gradient
+
+background: linear-gradient(
+  135deg,
+  #041C32 0%,
+  #082F49 50%,
+  #0B4F6C 100%
+);
+
+
+Buttons
+
+| Property   | Value                  |
+| ---------- | ---------------------- |
+| Background | `#EA580C`              |
+| Text       | `#FFFFFF`              |
+| Hover      | `#C2410C`              |
+| Radius     | `12px`                 |
+| Shadow     | `rgba(234,88,12,0.25)` |
+
+
+Secondary Button
+
+| Property   | Value               |
+| ---------- | ------------------- |
+| Background | Transparent         |
+| Border     | `1px solid #FFFFFF` |
+| Text       | `#FFFFFF`           |
+| Hover BG   | `#FFFFFF`           |
+| Hover Text | `#082F49`           |
+
+
+Cards / Service Boxes
+
+| Element           | Color     |
+| ----------------- | --------- |
+| Card Background   | `#FFFFFF` |
+| Card Border       | `#E2E8F0` |
+| Card Hover Border | `#EA580C` |
+| Card Title        | `#082F49` |
+| Card Text         | `#475569` |
+| Card Icon BG      | `#FFF7ED` |
+| Card Icon Color   | `#EA580C` |
+
+
+Sections
+
+
+| Section             | Background |
+| ------------------- | ---------- |
+| About Section       | `#FFFFFF`  |
+| Services Section    | `#F8FAFC`  |
+| Testimonial Section | `#EFF6FF`  |
+| CTA Section         | `#082F49`  |
+| FAQ Section         | `#FFFFFF`  |
+
+
+Typography Colors
+
+| Usage        | Color     |
+| ------------ | --------- |
+| Main Heading | `#082F49` |
+| Body Text    | `#475569` |
+| Light Text   | `#CBD5E1` |
+| Muted Text   | `#94A3B8` |
+| Links        | `#0EA5E9` |
+| Link Hover   | `#EA580C` |
+
+
+Forms
+
+| Element          | Color     |
+| ---------------- | --------- |
+| Input Background | `#FFFFFF` |
+| Border           | `#CBD5E1` |
+| Focus Border     | `#EA580C` |
+| Placeholder      | `#94A3B8` |
+| Label            | `#082F49` |
+| Error            | `#DC2626` |
+| Success          | `#16A34A` |
+
+
+Input Focus Style
+
+border-color: #EA580C;
+box-shadow: 0 0 0 4px rgba(234,88,12,0.15);
+
+
+Footer
+
+| Element           | Color                    |
+| ----------------- | ------------------------ |
+| Footer Background | `#041C32`                |
+| Footer Heading    | `#FFFFFF`                |
+| Footer Text       | `#CBD5E1`                |
+| Footer Links      | `#94A3B8`                |
+| Footer Hover      | `#EA580C`                |
+| Divider           | `rgba(255,255,255,0.08)` |
+
+
+Status Colors
+
+| Status  | Color     |
+| ------- | --------- |
+| Success | `#16A34A` |
+| Warning | `#F59E0B` |
+| Error   | `#DC2626` |
+| Info    | `#0EA5E9` |
+
+
+Recommended Fonts
+
+| Usage               | Font    |
+| ------------------- | ------- |
+| Heading             | Poppins |
+| Body                | Inter   |
+| Premium Alternative | Manrope |
+
+
+Best Gradient Combinations
+Primary Gradient
+linear-gradient(135deg, #EA580C, #FB923C);
+Dark Hero Gradient
+linear-gradient(135deg, #041C32, #082F49);
+Blue Accent Gradient
+linear-gradient(135deg, #0EA5E9, #38BDF8);
+
+
+Recommended Navbar Style
+Sticky navbar
+Slight blur effect
+Transparent initially → dark on scroll
+
+
+
