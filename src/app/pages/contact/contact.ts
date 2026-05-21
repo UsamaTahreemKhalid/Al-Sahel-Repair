@@ -20,4 +20,24 @@ export class Contact implements AfterViewInit {
       }
     }
   }
+
+  onSubmitContact(event: Event, name: string, email: string, subject: string, message: string) {
+    event.preventDefault();
+    if (isPlatformBrowser(this.platformId)) {
+      const formattedMessage = `*New Query - AL SAHEL Repair*\n\n` +
+        `*Name:* ${name.trim() || 'N/A'}\n` +
+        `*Email:* ${email.trim() || 'N/A'}\n` +
+        `*Subject:* ${subject.trim() || 'N/A'}\n` +
+        `*Message:* ${message.trim() || 'N/A'}`;
+      
+      const whatsappUrl = `https://wa.me/971562475707?text=${encodeURIComponent(formattedMessage)}`;
+      window.open(whatsappUrl, '_blank');
+
+      // Reset the form after submitting
+      const form = event.target as HTMLFormElement;
+      if (form) {
+        form.reset();
+      }
+    }
+  }
 }

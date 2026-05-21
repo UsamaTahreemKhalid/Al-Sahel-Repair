@@ -14,6 +14,7 @@ declare var $: any;
 })
 export class App implements OnInit, AfterViewInit {
   protected readonly title = signal('al-sahel-repair');
+  public readonly isChatOpen = signal(false);
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
@@ -44,6 +45,21 @@ export class App implements OnInit, AfterViewInit {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
       });
+    }
+  }
+
+  toggleChat() {
+    this.isChatOpen.update(v => !v);
+  }
+
+  closeChat() {
+    this.isChatOpen.set(false);
+  }
+
+  openWhatsAppDirect() {
+    if (isPlatformBrowser(this.platformId)) {
+      const defaultText = encodeURIComponent('Hi Al Sahel Repair! I would like to inquire about your AC repair and maintenance services.');
+      window.open(`https://wa.me/971562475707?text=${defaultText}`, '_blank');
     }
   }
 }

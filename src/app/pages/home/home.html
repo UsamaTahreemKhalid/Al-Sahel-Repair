@@ -67,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p class="mb-4">At AL SAHEL Repair & Maintenance, we are dedicated to keeping your home and office comfortable all year round. With years of experience in AC repair, installation, and central air refining in Ajman, our professional team ensures the highest quality service at the most affordable prices.</p>
                     <div class="border-top mt-4 pt-4">
                         <div class="row">
                             <div class="col-sm-6">
@@ -75,7 +75,7 @@
                                     <div class="btn-lg-square bg-primary rounded-circle me-3">
                                         <i class="fa fa-phone-alt text-white"></i>
                                     </div>
-                                    <h5 class="mb-0">+012 345 6789</h5>
+                                    <h5 class="mb-0"><a href="tel:+971562475707" class="text-dark">+971 56 247 5707</a></h5>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -83,7 +83,7 @@
                                     <div class="btn-lg-square bg-primary rounded-circle me-3">
                                         <i class="fa fa-envelope text-white"></i>
                                     </div>
-                                    <h5 class="mb-0">info@example.com</h5>
+                                    <h5 class="mb-0"><a href="mailto:info@alsahelrepair.com" class="text-dark">info@alsahelrepair.com</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -277,41 +277,43 @@
             <div class="col-lg-6 quote-form" data-parallax="scroll" data-image-src="/img/carousel-2.jpg">
                 <div class="h-100 px-4 px-sm-5 pe-lg-0 wow fadeIn" data-wow-delay="0.5s">
                     <div class="bg-white p-4 p-sm-5">
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="gname" placeholder="Gurdian Name">
-                                    <label for="gname">Your Name</label>
+                        <form (submit)="onSubmitQuote($event, gnameInput.value, gmailInput.value, cnameInput.value, cageInput.value, messageInput.value)">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="gname" placeholder="Gurdian Name" #gnameInput required>
+                                        <label for="gname">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="gmail" placeholder="Gurdian Email" #gmailInput required>
+                                        <label for="gmail">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="cname" placeholder="Child Name" #cnameInput required>
+                                        <label for="cname">Your Mobile</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="cage" placeholder="Child Age" #cageInput required>
+                                        <label for="cage">Service Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 80px" #messageInput required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary py-3 px-5" type="submit">Get A Free Quote</button>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="gmail" placeholder="Gurdian Email">
-                                    <label for="gmail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="cname" placeholder="Child Name">
-                                    <label for="cname">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="cage" placeholder="Child Age">
-                                    <label for="cage">Service Type</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 80px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Get A Free Quote</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -415,22 +417,49 @@
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item text-center">
-                        <img class="img-fluid mx-auto mb-4" src="/img/testimonial-1.jpg" alt="">
-                        <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                        <h5>Client Name</h5>
-                        <span>Profession</span>
+                        <img class="img-fluid mx-auto mb-4 rounded-circle" src="/img/testimonial-1.jpg" alt="" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="mb-2 text-warning">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p class="fs-5">"Excellent AC repair service in Ajman! Suleiman and Usman came to fix my central AC. They were professional, fast, and very polite. The AC is cooling perfectly now. Highly recommended!"</p>
+                        <h5>Mohammad Imran</h5>
+                        <span class="text-primary">Verified Customer</span>
                     </div>
                     <div class="testimonial-item text-center">
-                        <img class="img-fluid mx-auto mb-4" src="/img/testimonial-2.jpg" alt="">
-                        <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                        <h5>Client Name</h5>
-                        <span>Profession</span>
+                        <img class="img-fluid mx-auto mb-4 rounded-circle" src="/img/testimonial-2.jpg" alt="" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="mb-2 text-warning">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p class="fs-5">"Very satisfied with their service! They arrived quickly, diagnosed the issue with my split AC system, and fixed it at a very affordable price. They also used high-quality parts. Excellent job!"</p>
+                        <h5>Fatima Al-Nuaimi</h5>
+                        <span class="text-primary">Ajman Resident</span>
                     </div>
                     <div class="testimonial-item text-center">
-                        <img class="img-fluid mx-auto mb-4" src="/img/testimonial-3.jpg" alt="">
-                        <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                        <h5>Client Name</h5>
-                        <span>Profession</span>
+                        <img class="img-fluid mx-auto mb-4 rounded-circle" src="/img/testimonial-3.jpg" alt="" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="mb-2 text-warning">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p class="fs-5">"Outstanding maintenance service. The technicians are highly skilled and honest. They explained the problem clearly and did a thorough job. Prices are very reasonable compared to others."</p>
+                        <h5>Faisal Hashmi</h5>
+                        <span class="text-primary">Home Owner</span>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid mx-auto mb-4 rounded-circle" src="/img/team-1.jpg" alt="" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="mb-2 text-warning">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p class="fs-5">"Fast and reliable. My AC suddenly stopped working in the afternoon heat, and they came within 30 minutes. Usman was extremely knowledgeable and solved the issue immediately. 5 stars!"</p>
+                        <h5>Ahmed Al-Mansoori</h5>
+                        <span class="text-primary">Verified Customer</span>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid mx-auto mb-4 rounded-circle" src="/img/team-2.jpg" alt="" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="mb-2 text-warning">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p class="fs-5">"Professional and clean work. They made sure to clean up everything after finishing the AC service. The customer service was great. I highly recommend them for any home AC repairs!"</p>
+                        <h5>Sarah Khan</h5>
+                        <span class="text-primary">Verified Customer</span>
                     </div>
                 </div>
             </div>
