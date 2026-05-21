@@ -30,16 +30,29 @@
               }
             ],
             "styles": [
+              "public/lib/animate/animate.min.css",
+              "public/lib/owlcarousel/assets/owl.carousel.min.css",
               "src/styles.scss"
-            ]
+            ],
+            "scripts": [
+              "public/lib/wow/wow.min.js",
+              "public/lib/easing/easing.min.js",
+              "public/lib/waypoints/waypoints.min.js",
+              "public/lib/owlcarousel/owl.carousel.min.js",
+              "public/lib/counterup/counterup.min.js",
+              "public/lib/parallax/parallax.min.js"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/scss"]
+            }
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "1MB",
+                  "maximumError": "2MB"
                 },
                 {
                   "type": "anyComponentStyle",

@@ -1,0 +1,561 @@
+
+> al-sahel-repair@0.0.0 build
+> ng build --verbose
+
+❯ Building...
+
+  main-7IDUEHEC.js  252.2kb
+
+⚡ Done in 2361ms
+✔ Building...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main-7IDUEHEC.js    | main          | 258.28 kB |                63.70 kB
+styles-Z6WRV5PB.css | styles        | 167.49 kB |                17.86 kB
+
+                    | Initial total | 425.77 kB |                81.55 kB
+
+Application bundle generation complete. [3.525 seconds] - 2026-05-19T20:43:05.096Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap.scss:32:8:
+[37m      32 │ @import [32m[37m"bootstrap/scss/bootstrap";
+         ╵         [32m^[0m
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_alert.scss:51:65:
+[37m      51 │ ...alue, color-contrast($alert-background), [32m[37mabs($alert-color-scale));
+         ╵                                             [32m^[0m
+
+
+  Passing percentage units to the global abs() function is deprecated.
+  In the future, this will emit a CSS abs() function to be resolved by the browser.
+  To preserve current behavior: math.abs(40%)
+  To emit a CSS abs() now: abs(#{40%})
+  More info: [4mhttps://sass-lang.com/d/abs-percent[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:11:29:
+[37m      11 │     @if $prev-num == null or [32m[37munit($num) == "%" or unit($prev-num) ...
+         ╵                              [32m^[0m
+
+
+  Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+  Use math.unit instead.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:11:50:
+[37m      11 │ ...$prev-num == null or unit($num) == "%" or [32m[37munit($prev-num) == "%" {
+         ╵                                              [32m^[0m
+
+
+  Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+  Use math.unit instead.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:41:15:
+[37m      41 │       $result: [32m[37mmap-merge($result, ("n" + $key: (-$value)));
+         ╵                [32m^[0m
+
+
+  Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+  Use map.merge instead.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:126:10:
+[37m      126 │   @return [32m[37mif($l1 > $l2, ($l1 + .05) / ($l2 + .05), ($l2 + .05) / ...
+          ╵           [32m^[0m
+
+
+  The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+  
+  Suggestion: if(sass($l1 > $l2): ($l1 + 0.05) / ($l2 + 0.05); else: ($l2 + 0.05) / ($l1 + 0.05))
+  
+  More info: [4mhttps://sass-lang.com/d/if-function[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:134:9:
+[37m      134 │     "r": [32m[37mred($color),
+          ╵          [32m^[0m
+
+
+  red() is deprecated. Suggestion:
+  
+  color.channel($color, "red", $space: rgb)
+  
+  More info: [4mhttps://sass-lang.com/d/color-functions[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:135:9:
+[37m      135 │     "g": [32m[37mgreen($color),
+          ╵          [32m^[0m
+
+
+  green() is deprecated. Suggestion:
+  
+  color.channel($color, "green", $space: rgb)
+  
+  More info: [4mhttps://sass-lang.com/d/color-functions[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:136:9:
+[37m      136 │     "b": [32m[37mblue($color)
+          ╵          [32m^[0m
+
+
+  blue() is deprecated. Suggestion:
+  
+  color.channel($color, "blue", $space: rgb)
+  
+  More info: [4mhttps://sass-lang.com/d/color-functions[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:140:12:
+[37m      140 │     $value: [32m[37mif($value / 255 < .03928, $value / 255 / 12.92, nth($...
+          ╵             [32m^[0m
+
+
+  The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+  
+  Suggestion: if(sass($value / 255 < 0.03928): $value / 255 / 12.92; else: nth($_luminance-list, $value + 1))
+  
+  More info: [4mhttps://sass-lang.com/d/if-function[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:150:10:
+[37m      150 │   @return [32m[37mmix(rgba($foreground, 1), $background, opacity($foregro...
+          ╵           [32m^[0m
+
+
+  $weight: Passing a number without unit % (100) is deprecated.
+  
+  To preserve current behavior: $weight * 1%
+  
+  More info: [4mhttps://sass-lang.com/d/function-units[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:156:10:
+[37m      156 │   @return [32m[37mmix(white, $color, $weight);
+          ╵           [32m^[0m
+
+
+  Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+  Use color.mix instead.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:161:10:
+[37m      161 │   @return [32m[37mmix(black, $color, $weight);
+          ╵           [32m^[0m
+
+
+  Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+  Use color.mix instead.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:166:10:
+[37m      166 │   @return [32m[37mif($weight > 0, shade-color($color, $weight), tint-colo...
+          ╵           [32m^[0m
+
+
+  The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+  
+  Suggestion: if(sass($weight > 0): shade-color($color, $weight); else: tint-color($color, -$weight))
+  
+  More info: [4mhttps://sass-lang.com/d/if-function[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:184:10:
+[37m      184 │   @return [32m[37mif($return-calc == true, calc(#{$value1} + #{$value2}),...
+          ╵           [32m^[0m
+
+
+  The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+  
+  Suggestion: if(sass($return-calc == true): calc(#{$value1} + #{$value2}); else: $value1 + unquote(" + ") + $value2)
+  
+  More info: [4mhttps://sass-lang.com/d/if-function[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_functions.scss:204:10:
+[37m      204 │   @return [32m[37mif($return-calc == true, calc(#{$value1} - #{$value2}),...
+          ╵           [32m^[0m
+
+
+  The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+  
+  Suggestion: if(sass($return-calc == true): calc(#{$value1} - #{$value2}); else: $value1 + unquote(" - ") + $value2)
+  
+  More info: [4mhttps://sass-lang.com/d/if-function[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_list-group.scss:169:75:
+[37m      169 │ ...trast($list-group-background), [32m[37mabs($list-group-item-color-scal...
+          ╵                                   [32m^[0m
+
+
+  Passing percentage units to the global abs() function is deprecated.
+  In the future, this will emit a CSS abs() function to be resolved by the browser.
+  To preserve current behavior: math.abs(40%)
+  To emit a CSS abs() now: abs(#{40%})
+  More info: [4mhttps://sass-lang.com/d/abs-percent[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_variables.scss:253:5:
+[37m      253 │   1: [32m[37m$spacer / 4,
+          ╵      [32m^[0m
+
+
+  Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+  
+  Recommendation: math.div($spacer, 4) or calc($spacer / 4)
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/slash-div[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_variables.scss:254:5:
+[37m      254 │   2: [32m[37m$spacer / 2,
+          ╵      [32m^[0m
+
+
+  Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+  
+  Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/slash-div[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_variables.scss:353:22:
+[37m      353 │ $container-padding-x: [32m[37m$grid-gutter-width / 2 !default;
+          ╵                       [32m^[0m
+
+
+  Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+  
+  Recommendation: math.div($grid-gutter-width, 2) or calc($grid-gutter-width / 2)
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/slash-div[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_variables.scss:464:30:
+[37m      464 │ $headings-margin-bottom:      [32m[37m$spacer / 2 !default;
+          ╵                               [32m^[0m
+
+
+  Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+  
+  Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/slash-div[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_variables.scss:720:72:
+[37m      720 │ ...  add($input-line-height * .25em, [32m[37m$input-padding-y / 2) !default;
+          ╵                                      [32m^[0m
+
+
+  Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+  
+  Recommendation: math.div($input-padding-y, 2) or calc($input-padding-y / 2)
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/slash-div[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/_variables.scss:1188:36:
+[37m      1188 │ ...ver-arrow-outer-color:         [32m[37mfade-in($popover-border-color,...
+           ╵                                   [32m^[0m
+
+
+  fade-in() is deprecated. Suggestions:
+  
+  color.scale($color, $alpha: 6.25%)
+  color.adjust($color, $alpha: 0.05)
+  
+  More info: [4mhttps://sass-lang.com/d/color-functions[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/bootstrap.scss:10:8:
+[37m      10 │ @import [32m[37m"functions";
+         ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/bootstrap.scss:11:8:
+[37m      11 │ @import [32m[37m"variables";
+         ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/scss/bootstrap/scss/bootstrap.scss:12:8:
+[37m      12 │ @import [32m[37m"mixins";
+         ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m
+
+    src/styles.scss:2:8:
+[37m      2 │ @import [32m[37m"./scss/bootstrap.scss";
+        ╵         [32m^[0m
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+  
+  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1m329 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.[0m [1m[35m[plugin angular-sass][0m
+
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+  null
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnable to locate stylesheet: /lib/animate/animate.min.css[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnable to locate stylesheet: /lib/owlcarousel/assets/owl.carousel.min.css[0m
+
+
+Output location: /home/mian/Desktop/projects/Al-Sahel-Repair/dist/al-sahel-repair
+
