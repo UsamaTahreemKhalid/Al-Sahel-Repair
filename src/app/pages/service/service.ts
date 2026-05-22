@@ -31,7 +31,7 @@ export class Service implements AfterViewInit {
       description: 'Comprehensive inspection, deep coil cleaning, electrical checks, and pressure tuning to ensure optimal cooling performance and efficiency.',
       category: 'ac',
       icon: 'fas fa-snowflake',
-      image: '/img/services/ac-maintenance.jpg',
+      image: 'img/services/ac-maintenance.jpg',
       featured: true
     },
     {
@@ -40,7 +40,7 @@ export class Service implements AfterViewInit {
       description: 'Fast diagnosis and expert repair of compressor failures, fan issues, cooling cycles, and gas leaks to restore cold air immediately.',
       category: 'ac',
       icon: 'fas fa-wrench',
-      image: '/img/services/ac-repair.jpg',
+      image: 'img/services/ac-repair.jpg',
       featured: true
     },
     {
@@ -49,7 +49,7 @@ export class Service implements AfterViewInit {
       description: 'Precision installation of high-efficiency split, window, and central A/C units with perfect electrical calibration and placement.',
       category: 'ac',
       icon: 'fas fa-plus-circle',
-      image: '/img/services/ac-install.jpg',
+      image: 'img/services/ac-install.jpg',
       featured: true
     },
     {
@@ -58,7 +58,7 @@ export class Service implements AfterViewInit {
       description: 'Proactive scheduled tune-ups, filter cleaning, and system checks designed to eliminate unexpected breakdowns and extend unit lifespans.',
       category: 'ac',
       icon: 'fas fa-shield-alt',
-      image: '/img/services/ac-preventive.jpg',
+      image: 'img/services/ac-preventive.jpg',
       featured: true
     },
     {
@@ -67,7 +67,7 @@ export class Service implements AfterViewInit {
       description: 'Safe, professional decommissioning and removal of old air conditioning units, ensuring zero refrigerant leakage or environmental impact.',
       category: 'ac',
       icon: 'fas fa-trash-alt',
-      image: '/img/services/ac-dismantlement.jpg',
+      image: 'img/services/ac-dismantlement.jpg',
       featured: false
     },
     {
@@ -76,7 +76,7 @@ export class Service implements AfterViewInit {
       description: 'Deep cleaning and disinfection of air conditioning vents and grills to eliminate dust and allergens, improving indoor air quality.',
       category: 'ac',
       icon: 'fas fa-broom',
-      image: '/img/services/ac-vent-cleaning.jpg',
+      image: 'img/services/ac-vent-cleaning.jpg',
       featured: false
     },
     {
@@ -85,7 +85,7 @@ export class Service implements AfterViewInit {
       description: 'Specialized installation, repair, and maintenance for portable and spot-cooling A/C units, providing cold air wherever you need it.',
       category: 'ac',
       icon: 'fas fa-mobile-alt',
-      image: '/img/services/portable-ac.jpg',
+      image: 'img/services/portable-ac.jpg',
       featured: false
     },
     {
@@ -94,7 +94,7 @@ export class Service implements AfterViewInit {
       description: 'Complete sales, installation, and service for modern mini-split and ductless systems, perfect for energy-saving multi-zone climate control.',
       category: 'ac',
       icon: 'fas fa-wind',
-      image: '/img/services/ductless-ac.jpg',
+      image: 'img/services/ductless-ac.jpg',
       featured: false
     },
     {
@@ -103,7 +103,7 @@ export class Service implements AfterViewInit {
       description: 'Professional installation of high-performance heating units, furnaces, and energy-efficient heat pumps built to last.',
       category: 'heating',
       icon: 'fas fa-fire-alt',
-      image: '/img/services/heating-install.jpg',
+      image: 'img/services/heating-install.jpg',
       featured: false
     },
     {
@@ -112,7 +112,7 @@ export class Service implements AfterViewInit {
       description: 'Detailed annual tune-ups, heat exchanger inspections, and safety checks to guarantee reliable heating when winter arrives.',
       category: 'heating',
       icon: 'fas fa-tools',
-      image: '/img/services/heating-maintenance.jpg',
+      image: 'img/services/heating-maintenance.jpg',
       featured: false
     },
     {
@@ -121,7 +121,7 @@ export class Service implements AfterViewInit {
       description: 'Expert repairs for heating coils, thermostats, igniters, and burners to quickly restore warm, comforting airflow to your home or office.',
       category: 'heating',
       icon: 'fas fa-couch',
-      image: '/img/services/heating-repair.jpg',
+      image: 'img/services/heating-repair.jpg',
       featured: false
     },
     {
@@ -130,7 +130,7 @@ export class Service implements AfterViewInit {
       description: 'Comprehensive duct cleaning using specialized vacuum and sanitizing systems to remove mold, dirt, and odor-causing bacteria.',
       category: 'duct',
       icon: 'fas fa-broom',
-      image: '/img/services/duct-cleaning.jpg',
+      image: 'img/services/duct-cleaning.jpg',
       featured: true
     },
     {
@@ -138,7 +138,7 @@ export class Service implements AfterViewInit {
       title: 'HVAC Duct & Vent Installation',
       description: 'Expert layout design, fabrication, and installation of durable duct networks for balanced airflow and optimal indoor ventilation.',
       category: 'duct',
-      image: '/img/services/duct-install.jpg',
+      image: 'img/services/duct-install.jpg',
       icon: 'fas fa-th-large',
       featured: false
     },
@@ -148,7 +148,7 @@ export class Service implements AfterViewInit {
       description: 'Sealing air leaks, correcting air distribution problems, and repairing collapsed or damaged ducts to dramatically boost HVAC efficiency.',
       category: 'duct',
       icon: 'fas fa-toolbox',
-      image: '/img/services/duct-repair.jpg',
+      image: 'img/services/duct-repair.jpg',
       featured: false
     },
     {
@@ -157,7 +157,7 @@ export class Service implements AfterViewInit {
       description: 'Seamless custom installation of acoustic and ventilated ceiling panels, ensuring excellent indoor air diffusion and sleek, modern aesthetics.',
       category: 'duct',
       icon: 'fas fa-cube',
-      image: '/img/services/ceiling-install.jpg',
+      image: 'img/services/ceiling-install.jpg',
       featured: true
     },
     {
@@ -166,7 +166,7 @@ export class Service implements AfterViewInit {
       description: 'Comprehensive repair services for ventilated ceilings, resolving airflow blockages, panel sagging, structural issues, or system vibrations.',
       category: 'duct',
       icon: 'fas fa-tools',
-      image: '/img/services/ceiling-repair.jpg',
+      image: 'img/services/ceiling-repair.jpg',
       featured: false
     },
     {
@@ -175,7 +175,7 @@ export class Service implements AfterViewInit {
       description: 'Premium seasonal maintenance programs cover full-package central cooling, heating, ventilation, and mechanical control checks.',
       category: 'hvac',
       icon: 'fas fa-sync',
-      image: '/img/services/hvac-maintenance.jpg',
+      image: 'img/services/hvac-maintenance.jpg',
       featured: false
     },
     {
@@ -184,7 +184,7 @@ export class Service implements AfterViewInit {
       description: 'Quick-response troubleshooting and repairs for complete central air units, chillers, and integrated air-handling units.',
       category: 'hvac',
       icon: 'fas fa-cogs',
-      image: '/img/services/hvac-repair.jpg',
+      image: 'img/services/hvac-repair.jpg',
       featured: false
     },
     {
@@ -193,7 +193,7 @@ export class Service implements AfterViewInit {
       description: 'Comprehensive residential and commercial mechanical HVAC restoration services for all system makes, models, and setups.',
       category: 'hvac',
       icon: 'fas fa-cog',
-      image: '/img/services/hvac-repair-general.jpg',
+      image: 'img/services/hvac-repair-general.jpg',
       featured: false
     },
     {
@@ -202,7 +202,7 @@ export class Service implements AfterViewInit {
       description: 'Professional setup and wiring of standard, digital, or smart Wi-Fi thermostats to achieve precise room climate control.',
       category: 'hvac',
       icon: 'fas fa-temperature-high',
-      image: '/img/services/thermostat-install-simple.jpg',
+      image: 'img/services/thermostat-install-simple.jpg',
       featured: false
     },
     {
@@ -211,7 +211,7 @@ export class Service implements AfterViewInit {
       description: 'Upgrade your building with advanced programmable thermostats, allowing energy-saving scheduling and remote control options.',
       category: 'hvac',
       icon: 'fas fa-sliders-h',
-      image: '/img/services/thermostat-install.jpg',
+      image: 'img/services/thermostat-install.jpg',
       featured: false
     },
     {
@@ -220,7 +220,7 @@ export class Service implements AfterViewInit {
       description: 'Accurate diagnostics and repair of thermostat calibrations, sensor failures, and communication line wiring issues.',
       category: 'hvac',
       icon: 'fas fa-wrench',
-      image: '/img/services/thermostat-repair.jpg',
+      image: 'img/services/thermostat-repair.jpg',
       featured: false
     },
     {
@@ -229,7 +229,7 @@ export class Service implements AfterViewInit {
       description: 'Professional general installation of climate ventilation grates, register covers, dampers, and general cooling accessories.',
       category: 'general',
       icon: 'fas fa-hammer',
-      image: '/img/services/general-install.jpg',
+      image: 'img/services/general-install.jpg',
       featured: false
     },
     {
@@ -238,7 +238,7 @@ export class Service implements AfterViewInit {
       description: 'Thorough sanitization and superficial cleaning of A/C outer shells, grills, filter baskets, and structural mounting brackets.',
       category: 'general',
       icon: 'fas fa-soap',
-      image: '/img/services/general-cleaning.jpg',
+      image: 'img/services/general-cleaning.jpg',
       featured: false
     }
   ];
