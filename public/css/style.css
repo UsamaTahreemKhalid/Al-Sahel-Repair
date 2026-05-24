@@ -220,7 +220,16 @@
 
 /*** Facts ***/
 .facts {
-    background: rgba(8, 47, 73, 0.8);
+    background: linear-gradient(rgba(8, 47, 73, 0.8), rgba(8, 47, 73, 0.8)), url('../img/carousel-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    .facts {
+        background-attachment: scroll;
+    }
 }
 
 
