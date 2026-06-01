@@ -72,6 +72,9 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "allowedHosts": ["reforest-overtone-scroll.ngrok-free.dev"]
+          },
           "configurations": {
             "production": {
               "buildTarget": "al-sahel-repair:build:production"
