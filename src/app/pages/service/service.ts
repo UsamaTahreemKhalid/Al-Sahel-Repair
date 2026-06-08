@@ -224,22 +224,22 @@ export class Service implements AfterViewInit {
       featured: false
     },
     {
-      id: 'general-install',
-      title: 'Installation',
-      description: 'Professional general installation of climate ventilation grates, register covers, dampers, and general cooling accessories.',
+      id: 'refrigerator-repair',
+      title: 'Refrigerator Repair Service',
+      description: 'Fast and reliable repair for all types of refrigerators and freezers. We fix cooling issues, compressor problems, and leaks to keep your food fresh.',
       category: 'general',
-      icon: 'fas fa-hammer',
+      icon: 'fas fa-box',
       image: 'img/services/general-install.jpg',
-      featured: false
+      featured: true
     },
     {
-      id: 'general-cleaning',
-      title: 'Cleaning',
-      description: 'Thorough sanitization and superficial cleaning of A/C outer shells, grills, filter baskets, and structural mounting brackets.',
+      id: 'washing-machine-repair',
+      title: 'Washing Machine Repair Service',
+      description: 'Expert repair for all washing machine brands and models. We solve drainage issues, spinning problems, and electrical faults quickly.',
       category: 'general',
-      icon: 'fas fa-soap',
+      icon: 'fas fa-tint',
       image: 'img/services/general-cleaning.jpg',
-      featured: false
+      featured: true
     }
   ];
 
