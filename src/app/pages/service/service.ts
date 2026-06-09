@@ -134,17 +134,8 @@ export class Service implements AfterViewInit {
       featured: true
     },
     {
-      id: 'duct-install',
-      title: 'HVAC Duct & Vent Installation',
-      description: 'Expert layout design, fabrication, and installation of durable duct networks for balanced airflow and optimal indoor ventilation.',
-      category: 'duct',
-      image: 'img/services/duct-install.jpg',
-      icon: 'fas fa-th-large',
-      featured: false
-    },
-    {
       id: 'duct-repair',
-      title: 'HVAC Duct & Vent Repair',
+      title: 'HVAC Duct & Vent Installation / Repair',
       description: 'Sealing air leaks, correcting air distribution problems, and repairing collapsed or damaged ducts to dramatically boost HVAC efficiency.',
       category: 'duct',
       icon: 'fas fa-toolbox',
@@ -153,21 +144,12 @@ export class Service implements AfterViewInit {
     },
     {
       id: 'ceiling-install',
-      title: 'Ventilated Ceiling Installation',
+      title: 'Ventilated Ceiling Installation / Repair',
       description: 'Seamless custom installation of acoustic and ventilated ceiling panels, ensuring excellent indoor air diffusion and sleek, modern aesthetics.',
       category: 'duct',
       icon: 'fas fa-cube',
       image: 'img/services/ceiling-install.jpg',
       featured: true
-    },
-    {
-      id: 'ceiling-repair',
-      title: 'Ventilated Ceiling Repairs',
-      description: 'Comprehensive repair services for ventilated ceilings, resolving airflow blockages, panel sagging, structural issues, or system vibrations.',
-      category: 'duct',
-      icon: 'fas fa-tools',
-      image: 'img/services/ceiling-repair.jpg',
-      featured: false
     },
     {
       id: 'hvac-maintenance',
@@ -197,29 +179,11 @@ export class Service implements AfterViewInit {
       featured: false
     },
     {
-      id: 'thermostat-install-simple',
-      title: 'Install Thermostat',
-      description: 'Professional setup and wiring of standard, digital, or smart Wi-Fi thermostats to achieve precise room climate control.',
+      id: 'thermostat-repair',
+      title: 'Thermostat Installation / Repair',
+      description: 'Accurate diagnostics and install / repair of thermostat calibrations, sensor failures, and communication line wiring issues.',
       category: 'hvac',
       icon: 'fas fa-temperature-high',
-      image: 'img/services/thermostat-install-simple.jpg',
-      featured: false
-    },
-    {
-      id: 'thermostat-install',
-      title: 'Thermostat Installation',
-      description: 'Upgrade your building with advanced programmable thermostats, allowing energy-saving scheduling and remote control options.',
-      category: 'hvac',
-      icon: 'fas fa-sliders-h',
-      image: 'img/services/thermostat-install.jpg',
-      featured: false
-    },
-    {
-      id: 'thermostat-repair',
-      title: 'Thermostat Repair',
-      description: 'Accurate diagnostics and repair of thermostat calibrations, sensor failures, and communication line wiring issues.',
-      category: 'hvac',
-      icon: 'fas fa-wrench',
       image: 'img/services/thermostat-repair.jpg',
       featured: false
     },
