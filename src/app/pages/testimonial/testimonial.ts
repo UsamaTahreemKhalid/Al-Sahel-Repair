@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
 declare var WOW: any;
@@ -7,7 +7,7 @@ declare var $: any;
 
 @Component({
   selector: 'app-testimonial',
-  imports: [RouterLink],
+  imports: [RouterLink, NgOptimizedImage],
   templateUrl: './testimonial.html',
   styles: ``,
 })

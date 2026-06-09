@@ -67,7 +67,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" [attr.data-wow-delay]="'0.' + ((i % 3) * 2 + 1) + 's'">
                     <div class="service-item h-100 d-flex flex-column bg-white shadow-sm rounded overflow-hidden">
                         <div class="position-relative overflow-hidden" style="height: 230px;">
-                            <img class="img-fluid w-100 h-100" [src]="service.image" [alt]="service.title" style="object-fit: cover;">
+                            <img class="img-fluid" [ngSrc]="service.image" [alt]="service.title" fill style="object-fit: cover;">
                         </div>
                         <div class="d-flex align-items-center bg-light border-bottom">
                             <div class="service-icon flex-shrink-0 bg-primary d-flex align-items-center justify-content-center text-white" style="width: 90px; height: 90px;">

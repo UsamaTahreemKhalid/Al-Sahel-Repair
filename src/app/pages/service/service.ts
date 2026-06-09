@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, Inject, PLATFORM_ID, signal, computed } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
 declare var WOW: any;
@@ -16,7 +16,7 @@ export interface ServiceItem {
 
 @Component({
   selector: 'app-service',
-  imports: [RouterLink],
+  imports: [RouterLink, NgOptimizedImage],
   templateUrl: './service.html',
   styles: ``,
 })
@@ -31,7 +31,7 @@ export class Service implements AfterViewInit {
       description: 'Keep your home cool and your energy bills low with our comprehensive AC tune-up. We perform deep coil cleaning, check electrical connections, and fine-tune pressure levels to ensure your unit runs at peak performance all summer long.',
       category: 'ac',
       icon: 'fas fa-snowflake',
-      image: 'img/services/ac-maintenance.jpg',
+      image: 'img/services/ac-maintenance.webp',
       featured: true
     },
     {
@@ -40,7 +40,7 @@ export class Service implements AfterViewInit {
       description: 'Is your AC blowing warm air or making strange noises? Our expert technicians provide fast, reliable repairs for compressors, fan motors, and gas leaks. We diagnose the root cause quickly to restore your comfort without delay.',
       category: 'ac',
       icon: 'fas fa-wrench',
-      image: 'img/services/ac-repair.jpg',
+      image: 'img/services/ac-repair.webp',
       featured: true
     },
     {
@@ -49,7 +49,7 @@ export class Service implements AfterViewInit {
       description: 'Upgrading to a new cooling system? We specialize in the precision installation of high-efficiency split, window, and central AC units. Our team ensures perfect calibration and placement for maximum cooling and longevity.',
       category: 'ac',
       icon: 'fas fa-plus-circle',
-      image: 'img/services/ac-install.jpg',
+      image: 'img/services/ac-install.webp',
       featured: true
     },
     {
@@ -58,7 +58,7 @@ export class Service implements AfterViewInit {
       description: 'Avoid unexpected breakdowns during the hottest months with our proactive maintenance plans. We provide scheduled filter cleanings and system health checks to identify potential issues before they become costly repairs.',
       category: 'ac',
       icon: 'fas fa-shield-alt',
-      image: 'img/services/ac-preventive.jpg',
+      image: 'img/services/ac-preventive.webp',
       featured: true
     },
     {
@@ -67,7 +67,7 @@ export class Service implements AfterViewInit {
       description: 'Moving or replacing an old unit? Our professional team provides safe and clean decommissioning of old AC systems. We handle refrigerant recovery and removal with care to ensure no damage to your property or the environment.',
       category: 'ac',
       icon: 'fas fa-trash-alt',
-      image: 'img/services/ac-dismantlement.jpg',
+      image: 'img/services/ac-dismantlement.webp',
       featured: false
     },
     {
@@ -76,7 +76,7 @@ export class Service implements AfterViewInit {
       description: 'Breathe cleaner air with our professional vent and grill disinfection service. We remove accumulated dust, allergens, and mold from your AC vents to improve indoor air quality and keep your family healthy.',
       category: 'ac',
       icon: 'fas fa-broom',
-      image: 'img/services/ac-vent-cleaning.jpg',
+      image: 'img/services/ac-vent-cleaning.webp',
       featured: false
     },
     {
@@ -85,7 +85,7 @@ export class Service implements AfterViewInit {
       description: 'Need cooling in a specific spot? We offer specialized maintenance and repair for portable air conditioners. From exhaust setup to internal cleaning, we make sure your portable unit provides maximum relief where you need it most.',
       category: 'ac',
       icon: 'fas fa-mobile-alt',
-      image: 'img/services/portable-ac.jpg',
+      image: 'img/services/portable-ac.webp',
       featured: false
     },
     {
@@ -94,7 +94,7 @@ export class Service implements AfterViewInit {
       description: 'Enjoy personalized comfort with modern mini-split and ductless systems. We provide expert installation and service for these energy-efficient units, allowing you to control the temperature in each room independently.',
       category: 'ac',
       icon: 'fas fa-wind',
-      image: 'img/services/ductless-ac.jpg',
+      image: 'img/services/ductless-ac.webp',
       featured: false
     },
     {
@@ -103,7 +103,7 @@ export class Service implements AfterViewInit {
       description: 'When the temperature drops, stay warm with a professionally installed heating system. We install high-performance furnaces and energy-efficient heat pumps designed to provide reliable warmth for years to come.',
       category: 'heating',
       icon: 'fas fa-fire-alt',
-      image: 'img/services/heating-install.jpg',
+      image: 'img/services/heating-install.webp',
       featured: false
     },
     {
@@ -112,7 +112,7 @@ export class Service implements AfterViewInit {
       description: 'Prepare your home for winter with our detailed annual heating tune-up. We inspect heat exchangers, test safety controls, and clean vital components to ensure your system is safe and ready when you need it.',
       category: 'heating',
       icon: 'fas fa-tools',
-      image: 'img/services/heating-maintenance.jpg',
+      image: 'img/services/heating-maintenance.webp',
       featured: false
     },
     {
@@ -121,7 +121,7 @@ export class Service implements AfterViewInit {
       description: 'Don\'t let a broken heater leave you in the cold. Our technicians quickly fix thermostat issues, igniters, and burners to restore warm airflow to your home or office, ensuring your comfort is never compromised.',
       category: 'heating',
       icon: 'fas fa-couch',
-      image: 'img/services/heating-repair.jpg',
+      image: 'img/services/heating-repair.webp',
       featured: false
     },
     {
@@ -130,7 +130,7 @@ export class Service implements AfterViewInit {
       description: 'Clean ducts mean a more efficient HVAC system and a healthier home. We use specialized vacuums and sanitizing agents to clear away dust, debris, and odor-causing bacteria from deep within your ductwork.',
       category: 'duct',
       icon: 'fas fa-broom',
-      image: 'img/services/duct-cleaning.jpg',
+      image: 'img/services/duct-cleaning.webp',
       featured: true
     },
     {
@@ -139,7 +139,7 @@ export class Service implements AfterViewInit {
       description: 'Poorly sealed ducts can waste a significant amount of energy. We identify air leaks, repair collapsed ducts, and optimize your system\'s airflow to ensure every room stays comfortable while lowering your utility costs.',
       category: 'duct',
       icon: 'fas fa-toolbox',
-      image: 'img/services/duct-repair.jpg',
+      image: 'img/services/duct-repair.webp',
       featured: false
     },
     {
@@ -148,7 +148,7 @@ export class Service implements AfterViewInit {
       description: 'Enhance your space with professionally installed acoustic and ventilated ceiling panels. Our solutions improve air distribution and sound quality while giving your interior a modern and polished look.',
       category: 'duct',
       icon: 'fas fa-cube',
-      image: 'img/services/ceiling-install.jpg',
+      image: 'img/services/ceiling-install.webp',
       featured: true
     },
     {
@@ -157,7 +157,7 @@ export class Service implements AfterViewInit {
       description: 'Our premium seasonal maintenance programs are designed for complete peace of mind. We cover everything from central cooling and heating to ventilation and mechanical controls, ensuring your entire system stays in top shape.',
       category: 'hvac',
       icon: 'fas fa-sync',
-      image: 'img/services/hvac-maintenance.jpg',
+      image: 'img/services/hvac-maintenance.webp',
       featured: false
     },
     {
@@ -166,7 +166,7 @@ export class Service implements AfterViewInit {
       description: 'Facing a major HVAC failure? We provide quick-response troubleshooting and expert repairs for central air units, chillers, and air-handling systems. We get your complex mechanical systems back online fast.',
       category: 'hvac',
       icon: 'fas fa-cogs',
-      image: 'img/services/hvac-repair.jpg',
+      image: 'img/services/hvac-repair.webp',
       featured: false
     },
     {
@@ -175,7 +175,7 @@ export class Service implements AfterViewInit {
       description: 'We handle mechanical HVAC restoration for all makes and models. Whether it\'s a residential unit or a large commercial setup, our technicians have the experience to solve the most difficult system problems.',
       category: 'hvac',
       icon: 'fas fa-cog',
-      image: 'img/services/hvac-repair-general.jpg',
+      image: 'img/services/hvac-repair-general.webp',
       featured: false
     },
     {
@@ -184,7 +184,7 @@ export class Service implements AfterViewInit {
       description: 'Take control of your indoor climate with our thermostat services. We calibrate sensors, fix wiring issues, and install modern programmable thermostats that help you save energy and stay comfortable automatically.',
       category: 'hvac',
       icon: 'fas fa-temperature-high',
-      image: 'img/services/thermostat-repair.jpg',
+      image: 'img/services/thermostat-repair.webp',
       featured: false
     },
     {
@@ -193,7 +193,7 @@ export class Service implements AfterViewInit {
       description: 'A broken fridge is a major inconvenience. Our team provides fast, reliable repairs for cooling issues, compressor failures, and seal leaks. We work on all major brands to keep your food fresh and your kitchen running.',
       category: 'general',
       icon: 'fas fa-box',
-      image: 'img/services/general-install.jpg',
+      image: 'img/services/general-install.webp',
       featured: true
     },
     {
@@ -202,7 +202,7 @@ export class Service implements AfterViewInit {
       description: 'Dealing with drainage problems or a machine that won\'t spin? Our experts fix all types of washing machines and dryers quickly. We use quality parts to ensure your laundry routine gets back to normal as soon as possible.',
       category: 'general',
       icon: 'fas fa-tint',
-      image: 'img/services/general-cleaning.jpg',
+      image: 'img/services/general-cleaning.webp',
       featured: true
     }
   ];
