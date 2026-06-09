@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alsahelrepair.com/sitemap.xml
+Sitemap: https://al-sahel-repair.ae/sitemap.xml

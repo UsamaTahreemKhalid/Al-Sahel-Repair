@@ -54,7 +54,7 @@ export class App implements OnInit, AfterViewInit {
       
       // Update canonical URL in browser
       if (isPlatformBrowser(this.platformId)) {
-        let canonicalUrl = 'https://alsahelrepair.com' + this.router.url;
+        let canonicalUrl = 'https://al-sahel-repair.ae' + this.router.url;
         // Clean trailing slashes
         if (canonicalUrl.endsWith('/') && canonicalUrl.length > 27) {
           canonicalUrl = canonicalUrl.slice(0, -1);
