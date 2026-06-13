@@ -25,6 +25,24 @@ export class Service implements AfterViewInit {
   public readonly searchTerm = signal<string>('');
 
   public readonly services: ServiceItem[] = [
+        {
+      id: 'ac-install',
+      title: 'Install AC',
+      description: 'Upgrading to a new cooling system? We specialize in the precision installation of high-efficiency split, window, and central AC units. Our team ensures perfect calibration and placement for maximum cooling and longevity.',
+      category: 'ac',
+      icon: 'fas fa-plus-circle',
+      image: 'img/services/ac-install.webp',
+      featured: true
+    },
+        {
+      id: 'ac-repair',
+      title: 'A/C System Repair',
+      description: 'Is your AC blowing warm air or making strange noises? Our expert technicians provide fast, reliable repairs for compressors, fan motors, and gas leaks. We diagnose the root cause quickly to restore your comfort without delay.',
+      category: 'ac',
+      icon: 'fas fa-wrench',
+      image: 'img/services/ac-repair.webp',
+      featured: true
+    },
     {
       id: 'ac-maintenance',
       title: 'A/C System Maintenance',
@@ -35,21 +53,21 @@ export class Service implements AfterViewInit {
       featured: true
     },
     {
-      id: 'ac-repair',
-      title: 'A/C System Repair',
-      description: 'Is your AC blowing warm air or making strange noises? Our expert technicians provide fast, reliable repairs for compressors, fan motors, and gas leaks. We diagnose the root cause quickly to restore your comfort without delay.',
-      category: 'ac',
-      icon: 'fas fa-wrench',
-      image: 'img/services/ac-repair.webp',
+      id: 'refrigerator-repair',
+      title: 'Refrigerator Repair Service',
+      description: 'A broken fridge is a major inconvenience. Our team provides fast, reliable repairs for cooling issues, compressor failures, and seal leaks. We work on all major brands to keep your food fresh and your kitchen running.',
+      category: 'general',
+      icon: 'fas fa-box',
+      image: 'img/services/general-install.webp',
       featured: true
     },
     {
-      id: 'ac-install',
-      title: 'Install AC',
-      description: 'Upgrading to a new cooling system? We specialize in the precision installation of high-efficiency split, window, and central AC units. Our team ensures perfect calibration and placement for maximum cooling and longevity.',
-      category: 'ac',
-      icon: 'fas fa-plus-circle',
-      image: 'img/services/ac-install.webp',
+      id: 'washing-machine-repair',
+      title: 'Washing Machine Repair Service',
+      description: 'Dealing with drainage problems or a machine that won\'t spin? Our experts fix all types of washing machines and dryers quickly. We use quality parts to ensure your laundry routine gets back to normal as soon as possible.',
+      category: 'general',
+      icon: 'fas fa-tint',
+      image: 'img/services/general-cleaning.webp',
       featured: true
     },
     {
@@ -186,24 +204,6 @@ export class Service implements AfterViewInit {
       icon: 'fas fa-temperature-high',
       image: 'img/services/thermostat-repair.webp',
       featured: false
-    },
-    {
-      id: 'refrigerator-repair',
-      title: 'Refrigerator Repair Service',
-      description: 'A broken fridge is a major inconvenience. Our team provides fast, reliable repairs for cooling issues, compressor failures, and seal leaks. We work on all major brands to keep your food fresh and your kitchen running.',
-      category: 'general',
-      icon: 'fas fa-box',
-      image: 'img/services/general-install.webp',
-      featured: true
-    },
-    {
-      id: 'washing-machine-repair',
-      title: 'Washing Machine Repair Service',
-      description: 'Dealing with drainage problems or a machine that won\'t spin? Our experts fix all types of washing machines and dryers quickly. We use quality parts to ensure your laundry routine gets back to normal as soon as possible.',
-      category: 'general',
-      icon: 'fas fa-tint',
-      image: 'img/services/general-cleaning.webp',
-      featured: true
     }
   ];
 

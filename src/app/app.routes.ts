@@ -13,7 +13,7 @@ export const routes: Routes = [
   {
     path: '',
     component: Home,
-    title: 'AC Repair Sharjah, Ajman & Dubai | Best AC Maintenance & Service - AL SAHEL Repair',
+    title: 'AC Repair Dubai, Sharjah & Ajman | Best AC Maintenance & Service - AL SAHEL Repair',
     data: {
       description: 'Looking for reliable AC repair in Sharjah, Ajman, or Dubai? AL SAHEL Repair offers fast, 24/7 emergency AC repair, split/central AC maintenance, washing machine repair, and refrigerator repair at affordable rates. Get your free quote today!',
       keywords: 'AC Repair Sharjah, AC repair Ajman, AC repair Dubai, AC maintenance Sharjah, washing machine repair Dubai, refrigerator repair Ajman'

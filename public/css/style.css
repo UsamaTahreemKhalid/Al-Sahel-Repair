@@ -99,7 +99,7 @@
 }
 
 .navbar .navbar-brand img {
-    height: 96px;
+    height: 180px;
     width: auto;
 }
 
@@ -127,7 +127,7 @@
 
 @media (max-width: 991.98px) {
     .navbar .navbar-brand img {
-        max-height: 45px;
+        max-height: 120px;
     }
 
     .navbar .navbar-nav {
@@ -137,6 +137,12 @@
 
     .navbar .nav-item .dropdown-menu {
         padding-left: 30px;
+    }
+}
+
+@media (max-width: 390px) {
+    .navbar .navbar-brand img {
+        max-height: 70px;
     }
 }
 

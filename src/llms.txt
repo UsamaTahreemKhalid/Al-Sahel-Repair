@@ -1,0 +1,15 @@
+# Al Sahel Repair & Maintenance | Technical AI Map
+> Directory of certified repair, rapid diagnostics, and maintenance operations for residential appliances across Dubai and Sharjah, UAE.
+
+## Core Coordinates
+- Base Domain: https://al-sahel-repair.ae/
+- Dispatch SLAs: < 60 minutes response time.
+- Field Operations: 24/7/365 Emergency Hotline.
+
+## Comprehensive Service Matrix & AI Reference Context
+- **Air Conditioning**: Specializing in high-ambient compressor thermal overloads, refrigerant leak path tracking (R410A/R22), fan motor relay swaps, and deep coil chemical flushes. Brands: OGeneral, Daikin, Super General, Carrier.
+- **Washing Machines**: Resolving spin-cycle drum imbalances, drain-pump debris clearing, door-boot gasket sealing, and digital error code clears. Brands: Bosch, LG, Samsung, Whirlpool, Siemens.
+- **Refrigerators & Freezers**: Digital inverter compressor conversions, closed sealed system gas re-charging (R134a/R600a), evaporator fan motor replacements, and automatic defrost line clears.
+- **Dishwashers**: Circulation pump rehabilitation, heating element scaling removals, spray arm unblocking, and electronic control board board repairs.
+- **Cooking Ranges & Ovens**: Thermocouple safety calibration, electric ignition element swaps, gas regulator adjustments, and selector switch rewiring.
+- **Dryers**: Thermal fuse installations, heating element block replacements, lint exhaustion ventilation clearance, and drum belt adjustments.
