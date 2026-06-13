@@ -111,7 +111,7 @@ export class AppComponent implements OnInit, AfterViewInit {
             { "@type": "AdministrativeArea", "name": "Ajman" }
           ],
           "sameAs": [
-            "https://www.facebook.com/alsahelrepair",
+            "https://www.facebook.com/people/Al-Sahel-Repair/61590893903354/",
             "https://www.instagram.com/alsahelrepair"
           ]
         },
