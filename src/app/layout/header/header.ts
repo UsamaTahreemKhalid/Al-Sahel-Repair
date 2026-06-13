@@ -25,4 +25,13 @@ export class Header implements AfterViewInit {
       });
     }
   }
+
+  closeNavbar() {
+    if (isPlatformBrowser(this.platformId)) {
+      const navbarCollapse = $('#navbarCollapse');
+      if ($('.navbar-toggler').is(':visible') && navbarCollapse.hasClass('show')) {
+        navbarCollapse.collapse('hide');
+      }
+    }
+  }
 }
