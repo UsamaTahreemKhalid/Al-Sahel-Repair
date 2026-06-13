@@ -72,23 +72,24 @@ export class AppComponent implements OnInit, AfterViewInit {
         {
           "@type": "LocalBusiness",
           "@id": "https://al-sahel-repair.ae/#organization",
-          "name": "Al Sahel Repair & Maintenance",
+          "name": "AL SAHEL Repair",
           "url": "https://al-sahel-repair.ae/",
-          "telephone": "+971507772806",
-          "priceRange": "$$",
+          "telephone": "+971562475707",
+          "priceRange": "AED",
           "image": "https://al-sahel-repair.ae/img/icon/logo.webp",
           "description": "Expert home appliance repair and maintenance services in Dubai, Sharjah, and Ajman. Certified technicians for AC, washing machines, refrigerators, and more.",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Industrial Area",
-            "addressLocality": "Sharjah",
-            "addressRegion": "Sharjah / Dubai",
+            "streetAddress": "76 Thabit Bin Qais Street, 2 Al Nuaimia",
+            "addressLocality": "Ajman",
+            "addressRegion": "Ajman",
+            "postalCode": "00000",
             "addressCountry": "AE"
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "25.3225",
-            "longitude": "55.3914"
+            "latitude": "25.3843",
+            "longitude": "55.4478"
           },
           "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
